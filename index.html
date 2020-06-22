@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample</title>
+
+  <!-- Stylesheets -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- Google Font -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Muli&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Script -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <h1 id="title">Good Vibes Form</h1>
+
+    <form action="get">
+
+      <div class="row">
+        <div class="col-lg-12 heading" id="border-top">Tell us something positive that happened to you today.</div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 shift-right">Name:</div>
+        <div class="col-lg-6"><input type="text" name="name" placeholder="Enter your name here"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 shift-right">E-mail ID:</div>
+        <div class="col-lg-6"><input type="text" name="email" placeholder="Enter your Email ID here"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 shift-right">On a scale of 1 to 10 how good was it?</div>
+        <div class="col-lg-6"><input type="number" name="rate" min="1" max="10" placeholder="Enter a number between 1 to 10"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 shift-right">Where did it happen?</div>
+        <div class="col-lg-6"><select name="place" id="place">
+            <option value="athome">At home</option>
+            <option value="onmycommute">On my commute</option>
+            <option value="atwork">At work</option>
+            <option value="onthestreet">On the street</option>
+            <option value="other">Other</option>
+          </select></div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 shift-right">At what time of day did it happen?</div>
+        <div class="col-lg-6"><input type="radio" name="morning"> Morning <br>
+          <input type="radio" name="afternoon"> Afternoon <br>
+          <input type="radio" name="evening"> Evening</div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 shift-right">What emotions did you experience? (Select all that apply)</div>
+        <div class="col-lg-6">
+          <input type="checkbox" name="excited"> Excited <br>
+          <input type="checkbox" name="humbled"> Humnbled <br>
+          <input type="checkbox" name="elated"> Elated <br>
+          <input type="checkbox" name="loved"> Loved <br>
+          <input type="checkbox" name="enthusiastic"> Entusiastic
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 shift-right">Please describe your positive experience.</div>
+        <div class="col-lg-6"><textarea name="description" rows="8" cols="30"></textarea></div>
+        <div class="col-lg-12" id="border-bottom"><input type="submit" value="Submit"></div>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>
